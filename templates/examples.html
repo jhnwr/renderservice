@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+       <div class="hero-body">
+            <div class="container has-text-centered">
+                <p>
+                   <h1 class="title is-2">Use Endpoint /render</h1>
+                </p>
+                <p>
+                    <strong>"/render?url=<i>url</i> "</strong> with the URL you want rendered
+                </p>
+                <div>
+                    <p>
+                        it will return a JSON response:
+                        data = {
+                            "info": <i>url</i>,
+                            "html": <i>HTML</i>
+                        }
+                    </p>
+                </div>
+            </div>
+        </div>
+{% endblock content %}
